@@ -16,7 +16,7 @@
               <ul>
                 {% for course in site.pages %}
                   {% if course.path contains 'course' %}
-                    <li><a href="{{ githubRepo }}{{course.url}}">{{ course.title }}</a></li>
+                    <li><a href="{{ page.githubRepo }}{{course.url}}">{{ course.title }}</a></li>
                   {% endif %}
                 {% endfor %}
               </ul>
