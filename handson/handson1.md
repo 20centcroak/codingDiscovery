@@ -1,10 +1,8 @@
 ---
 layout: handson
-title: Hands-on for course1
+title: Build your first html page
 number: 1
 ---
-
-# Hands on - part1
 
 - create in notepad a html file with the following content:
 

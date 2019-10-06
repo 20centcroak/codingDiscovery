@@ -15,7 +15,7 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               {% for course in site.pages %}
                 {% if course.path contains 'course' %}
-                  {{ course.title }}
+                  <a href="{{ githubRepo }}course.url"{{ course.title }}
                 {% endif %}
               {% endfor %}
             </div>
@@ -28,15 +28,6 @@
 
 <div class="container">
   <!-- <p>{{site.url}}</p>
-  <p>{{page.url}}</p>
-  <p>{{page.dir}}</p>
-  <p>{% for course in site.pages %}
-    {% if course.path contains 'course' %}
-      {% if course.path contains course.number %}
-        {{ course.path }}
-      {% endif %}
-    {% endif %}
-  {% endfor %}</p> -->
   <div class="ht-tm-cat">
     <div class="row">
       <div class="ht-tm-codeblock">
