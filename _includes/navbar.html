@@ -27,7 +27,7 @@
 </div>
 
 <div class="container">
-  <p>{{site.url}}</p>
+  <!-- <p>{{site.url}}</p>
   <p>{{page.url}}</p>
   <p>{{page.dir}}</p>
   <p>{% for course in site.pages %}
@@ -36,19 +36,19 @@
         {{ course.path }}
       {% endif %}
     {% endif %}
-  {% endfor %}</p>
+  {% endfor %}</p> -->
   <div class="ht-tm-cat">
     <div class="row">
       <div class="ht-tm-codeblock">
         <ul class="nav nav-tabs ht-tm-element">
           <li class="nav-item">
-            <a class="nav-link {% if page.layout == "course" %} active {% endif %}" href="">Course</a>
+            <a class="nav-link {% if page.layout == "course" %} active {% endif %}" href="/{{ page.githubRepo }}/courses/course{{ page.number }}.html">Course</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.layout == "handson" %} active {% endif %}" href="/handson/handson{{ page.number }}.html">Hands on</a>
+            <a class="nav-link {% if page.layout == "handson" %} active {% endif %}" href="/{{ page.githubRepo }}/handson/handson{{ page.number }}.html">Hands on</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.layout == "sample" %} active {% endif %}" href="/samples/sample{{ page.number }}.html">Result</a>
+            <a class="nav-link {% if page.layout == "sample" %} active {% endif %}" href="/{{ page.githubRepo }}/samples/sample{{ page.number }}.html">Result</a>
           </li>
         </ul>
       </div>
