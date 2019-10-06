@@ -1,0 +1,28 @@
+---
+handsonIsActive: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+
+    {% include navbar.html %}
+
+    <div class="jumbotron">
+      <div class="container">
+
+        <div>{{content}}</div>
+        <div>
+          <iframe id="inlineFrameExample"
+              title="Inline Frame Example"
+              src="/results/result{{ page.number}}.html">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body {
+  background-color: DarkTurquoise ;
+  font-family: Georgia, serif;
+}
+h1{
+  color: White;
+}
+p {
+  color: Teal;
+  padding-left: 20px;
+}
+a{
+  color: MidnightBlue;
+  text-decoration: none;
+}
+a:hover {
+  color: DarkOrange;
+}
+.section1{
+  background-color: DarkGreen;
+}
+.section2{
+  background-color: Blue;
+}
+.section2Paragraph{
+  background-color: Cyan;
+}

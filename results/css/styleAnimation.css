@@ -1,0 +1,25 @@
+.move {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  position: relative;
+  animation-name: my-animation;
+  animation-duration: 4s;
+  border-radius: 50px;
+}
+
+/* Standard syntax */
+@keyframes my-animation {
+  0%   {background-color:navy; left:0px; top:0px;}
+  25%  {background-color:blue; left:100px; top:50px;}
+  50%  {background-color:teal; left:50px; top:150px;}
+  75%  {background-color:purple; left:50px; top:50px;}
+  100% {background-color:deeppink; left:0px; top:0px;}
+}
+
+p{
+  padding: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: lightGrey;
+}
