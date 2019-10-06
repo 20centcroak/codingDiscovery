@@ -13,7 +13,6 @@ number: 1
   Hello world
 </html>
 ```
-see file [sample1](../htmlpart1/sample1.html)
 
 Then open this file in your internet browser and you will see your message! As you can see, tags are not displayed, they are only used by the internet browser to understand the content of the file and how to display it. Tags are most generaly pairs that are open and closed: `<html></html>`
 
@@ -32,8 +31,6 @@ Here is a second example:
   </body>
 </html>
 ```
-
-see file [sample2](../htmlpart1/sample2.html)
 
 This is a best formed html file. It gives exactly the same result but we can see more tags:
 - `<!DOCTYPE html>`:  define which version of html is used in this file. Here we define that we use HTML5 version
