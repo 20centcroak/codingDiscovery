@@ -13,11 +13,13 @@
               Courses
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              {% for course in site.pages %}
-                {% if course.path contains 'course' %}
-                  <a href="{{ githubRepo }}{{course.url}}">{{ course.title }}</a>
-                {% endif %}
-              {% endfor %}
+              <ul>
+                {% for course in site.pages %}
+                  {% if course.path contains 'course' %}
+                    <li><a href="{{ githubRepo }}{{course.url}}">{{ course.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
             </div>
           </div>
         </div>
