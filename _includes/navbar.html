@@ -28,6 +28,7 @@
 
 <div class="container">
   <p>{{site.url}}</p>
+  <p>{{page.dir}}</p>
   <p>{% for course in site.pages %}
     {% if course.path contains 'course' %}
       {% if course.path contains course.number %}
