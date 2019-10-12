@@ -15,10 +15,7 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <ul>
                 {% for course in site.en-courses %}
-                  <li><a href="{{course.url}}">{{ course.title }}</a></li>
-                  <!-- {% if course.path contains 'course' %}
-                    <li><a href="{{ page.githubRepo }}en/{{course.url}}">{{ course.title }}</a></li>
-                  {% endif %} -->
+                  <li><a href="{{course.url | relative_url}}">{{ course.title }}</a></li>
                 {% endfor %}
               </ul>
             </div>
