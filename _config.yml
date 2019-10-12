@@ -3,10 +3,10 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      githubRepo: "/codingDiscovery/"
+      githubRepo: "/codingDiscovery"
 
 collections:
   en-courses:
     sort_by: number
     output: true
-    permalink: /:collection/:name
+    permalink: /:name
