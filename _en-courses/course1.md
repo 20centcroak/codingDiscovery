@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: course-en
 title: My first html page
 number: 1
 ---
@@ -41,6 +41,6 @@ This is a best formed html file. It gives exactly the same result but we can see
 
 - then the part to be displayed is inside the `<body>` tag pair.
 
-As all of this soup has to be redone for each html page we build, a more convenient way to add a well formated file is to use a template such as the [html5 boilerplate](https://html5boilerplate.com). Anotther way is to use IDE. This means a specific piece of software to work on software development. For example [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com) help saving a lot of time when building a website.
+As all of this soup has to be redone for each html page we build, a more convenient way to add a well formated file is to use a template such as the [html5 boilerplate](https://html5boilerplate.com). Another way is to use IDE. This means a specific piece of software to work on software development. For example [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com) help saving a lot of time when building a website.
 
 We will see other way to focus only on the content we want to display and not on this soup.

@@ -1,0 +1,50 @@
+<div class="bg-dark navbar-dark text-white">
+  <div class="container">
+    <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+
+          <div class="dropdown show">
+            <a href="{{ page.githubRepo }}/index.html" class="pl-md-0 p-3 text-light">home</a>
+            <a href="#" class="pl-md-0 p-3 text-light role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <ul>
+                {% for course in site.en-courses %}
+                  <li><a href="{{course.url}}">{{ course.title }}</a></li>
+                  <!-- {% if course.path contains 'course' %}
+                    <li><a href="{{ page.githubRepo }}en/{{course.url}}">{{ course.title }}</a></li>
+                  {% endif %} -->
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <div class="ht-tm-cat">
+    <div class="row">
+      <div class="ht-tm-codeblock">
+        <ul class="nav nav-tabs ht-tm-element">
+          <li class="nav-item">
+            <a class="nav-link {% if page.layout == "course" %} active {% endif %}" href="{{ page.githubRepo }}/en/courses/course{{ page.number }}.html">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.layout == "handson" %} active {% endif %}" href="{{ page.githubRepo }}/en/handson/handson{{ page.number }}.html">Hands on</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.layout == "sample" %} active {% endif %}" href="{{ page.githubRepo }}/samples/sample{{ page.number }}.html">Result</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,4 +3,8 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      githubRepo: "/codingDiscovery"
+      githubRepo: ""
+
+collections:
+  en-courses:
+    sort_by: number

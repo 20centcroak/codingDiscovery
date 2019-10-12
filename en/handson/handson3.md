@@ -1,5 +1,5 @@
 ---
-layout: handson
+layout: handson-en
 title: Make it pretty
 number: 3
 ---

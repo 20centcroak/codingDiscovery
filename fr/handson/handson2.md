@@ -1,5 +1,5 @@
 ---
-layout: handson
+layout: handson-fr
 title: Add Links to your pages
 number: 2
 ---

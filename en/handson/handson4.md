@@ -1,5 +1,5 @@
 ---
-layout: handson
+layout: handson-en
 title: Add fun with animations
 number: 4
 ---

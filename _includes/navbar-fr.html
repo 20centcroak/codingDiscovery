@@ -8,15 +8,15 @@
         <div class="navbar-nav">
 
           <div class="dropdown show">
-            <a href="{{ page.githubRepo }}/index.html" class="pl-md-0 p-3 text-light">home</a>
+            <a href="{{ page.githubRepo }}/index-fr.html" class="pl-md-0 p-3 text-light">Accueil</a>
             <a href="#" class="pl-md-0 p-3 text-light role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Courses
+              Cours
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <ul>
                 {% for course in site.pages %}
                   {% if course.path contains 'course' %}
-                    <li><a href="{{ page.githubRepo }}{{course.url}}">{{ course.title }}</a></li>
+                    <li><a href="{{ page.githubRepo }}fr/{{course.url}}">{{ course.title }}</a></li>
                   {% endif %}
                 {% endfor %}
               </ul>
@@ -34,13 +34,13 @@
       <div class="ht-tm-codeblock">
         <ul class="nav nav-tabs ht-tm-element">
           <li class="nav-item">
-            <a class="nav-link {% if page.layout == "course" %} active {% endif %}" href="{{ page.githubRepo }}/courses/course{{ page.number }}.html">Course</a>
+            <a class="nav-link {% if page.layout == "course" %} active {% endif %}" href="{{ page.githubRepo }}/fr/courses/course{{ page.number }}.html">Cours</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.layout == "handson" %} active {% endif %}" href="{{ page.githubRepo }}/handson/handson{{ page.number }}.html">Hands on</a>
+            <a class="nav-link {% if page.layout == "handson" %} active {% endif %}" href="{{ page.githubRepo }}/fr/handson/handson{{ page.number }}.html">TP</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if page.layout == "sample" %} active {% endif %}" href="{{ page.githubRepo }}/samples/sample{{ page.number }}.html">Result</a>
+            <a class="nav-link {% if page.layout == "sample" %} active {% endif %}" href="{{ page.githubRepo }}/samples/sample{{ page.number }}.html">Résultat</a>
           </li>
         </ul>
       </div>

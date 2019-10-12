@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: course-fr
 title: Animations
 number: 4
 ---

@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: course-en
 title: To go farther...
 number: 5
 ---
