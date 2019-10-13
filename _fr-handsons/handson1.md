@@ -1,7 +1,7 @@
 ---
-layout: handson-en
+layout: course-fr
 title: Build your first html page
-number: 1
+number: 1.1
 ---
 
 - create in notepad a html file with the following content:

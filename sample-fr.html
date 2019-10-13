@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+
+    {% include navbar-en.html %}
+
+
+    <script type="text/javascript">
+      const urlParams = new URLSearchParams(window.location.search);
+      const result = urlParams.get('result');
+      const title = urlParams.get('title');
+    </script>
+
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4"><script type="text/javascript">document.write(title)</script></h1>
+        <div>Voici le résultat attendu</div>
+        <div>
+          <iframe id="inlineFrameExample"
+              title="Inline Frame Example"
+              width="450"
+              height="300"
+              src="document.write(result)">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    {% include footer-fr.html %}
+    {% include scripts.html %}
+  </body>
+</html>

@@ -1,5 +1,5 @@
 ---
-layout: handson-fr
+layout: course-fr
 title: Add fun with animations
 number: 4
 ---

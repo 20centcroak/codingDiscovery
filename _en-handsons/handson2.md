@@ -1,5 +1,5 @@
 ---
-layout: handson-en
+layout: course-en
 title: Add Links to your pages
 number: 2
 ---

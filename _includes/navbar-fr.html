@@ -1,3 +1,9 @@
+{% for handson in site.fr-handsons %}
+  {% if handson.number == page.number %}{% assign handson-url = handson.url %}{% endif %}
+{% endfor %}
+{% for result in site.fr-results %}
+  {% if result.number == page.number %}{% assign result-url = result.url %}{% endif %}
+{% endfor %}
 <div class="bg-dark navbar-dark text-white">
   <div class="container">
     <nav class="navbar px-0 navbar-expand-lg navbar-dark">
@@ -8,19 +14,20 @@
         <div class="navbar-nav">
 
           <div class="dropdown show">
-            <a href="{{ page.githubRepo }}/index-fr.html" class="pl-md-0 p-3 text-light">Accueil</a>
+            <a href="{{ '/index-fr.html' | relative_url}}" class="pl-md-0 p-3 text-light">Accueil</a>
             <a href="#" class="pl-md-0 p-3 text-light role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Cours
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <ul>
-                {% for course in site.pages %}
-                  {% if course.path contains 'course' %}
-                    <li><a href="{{ page.githubRepo }}fr/{{course.url}}">{{ course.title }}</a></li>
-                  {% endif %}
+                {% for course in site.fr-courses %}
+                  {% if getNext %}{% assign next = course.url %}{% assign getNext = false %}{% endif %}
+                  {% if course.number == page.number %}{% assign course-url = course.url %}{% assign getNext = true %}{% endif %}
+                  <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a></li>
                 {% endfor %}
               </ul>
             </div>
+            <a href="{{ next | relative_url}}" class="pl-md-0 p-3 text-light">Suivant</a>
           </div>
         </div>
       </div>
@@ -33,15 +40,21 @@
     <div class="row">
       <div class="ht-tm-codeblock">
         <ul class="nav nav-tabs ht-tm-element">
-          <li class="nav-item">
-            <a class="nav-link {% if page.layout == "course" %} active {% endif %}" href="{{ page.githubRepo }}/fr/courses/course{{ page.number }}.html">Cours</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.layout == "handson" %} active {% endif %}" href="{{ page.githubRepo }}/fr/handson/handson{{ page.number }}.html">TP</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.layout == "sample" %} active {% endif %}" href="{{ page.githubRepo }}/samples/sample{{ page.number }}.html">Résultat</a>
-          </li>
+          {% if course-url %}
+            <li class="nav-item">
+              <a class="nav-link {% if page.layout == 'course' %} active {% endif %}" href="{{ course-url | relative_url }}">Cours</a>
+            </li>
+          {% endif %}
+          {% if handson-url %}
+            <li class="nav-item">
+              <a class="nav-link {% if page.layout == 'handson' %} active {% endif %}" href="{{ handson-url | relative_url }}">TP</a>
+            </li>
+          {% endif %}
+          {% if result-url %}
+            <li class="nav-item">
+              <a class="nav-link {% if page.layout == 'sample' %} active {% endif %}" href="{{ result-url | relative_url }}">Résultat</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </div>

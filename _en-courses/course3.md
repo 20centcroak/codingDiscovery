@@ -1,7 +1,7 @@
 ---
 layout: course-en
 title: Styling pages
-number: 0
+number: 3
 ---
 
  Well now we know how to create a webpage and add link, but honestly, the result is ugly.

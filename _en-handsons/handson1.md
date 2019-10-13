@@ -1,5 +1,5 @@
 ---
-layout: handson-fr
+layout: course-en
 title: Build your first html page
 number: 1
 ---

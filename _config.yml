@@ -1,12 +1,30 @@
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      githubRepo: "/codingDiscovery"
-
 collections:
   en-courses:
     sort_by: number
     output: true
-    permalink: /:name
+    permalink: /:collection/:name
+
+  en-handsons:
+    sort_by: number
+    output: true
+    permalink: /:collection/:name
+
+  en-results:
+    sort_by: number
+    output: true
+    permalink: /:collection/:name
+
+  fr-courses:
+    sort_by: number
+    output: true
+    permalink: /:collection/:name
+
+  fr-handsons:
+    sort_by: number
+    output: true
+    permalink: /:collection/:name
+
+  fr-results:
+    sort_by: number
+    output: true
+    permalink: /:collection/:name

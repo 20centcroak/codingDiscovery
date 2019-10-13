@@ -1,24 +1,10 @@
 ---
 layout: course-fr
-title: Ma première page html
-number: 1
-next: course2
+title: Ma page html
+number: 1.1
 ---
 
-html est un langage informatique. Il est composé de *balises* comme `<html>` et de texte.
-Une fois ce *code* écrit, ce langage est compris et affiché par les navigateurs internet.
-
-Essaie ce code très simple. Crée un fichier *index.html* et copie et colle les quelques lignes ci-dessous :
-```html
-<html>
-  Hello world
-</html>
-```
-
-Ouvre ensuite ce fichier dans ton navigateur internet et tu verras ton message s'afficher !
-Comme tu peux le voir, les *balises* ne sont pas affichées, elles sont uniquement utilisées par le navigateur internet pour comprendre comment afficher le texte. Les balises vont généralement par paires et sont ouvertes et fermées comme ceci : `<html></html>`
-
-Même si cet exemple simple fonctionne, c'est grâce au fait que les navigateurs internet sont très permissifs, ils réussissent à afficher des pages même lorsqu'elles présentes des petites erreurs de code, ce qui ne sera pas vrai pour d'autres langages informatiques. Cependant si on veut éviter les mauvaises surprises, nous devons ajouter plus de détails dans notre code pour décrire plus précisément le contenu à afficher.
+Même si l'exemple très simple de la première leçon fonctionne, c'est grâce au fait que les navigateurs internet sont très permissifs, ils réussissent à afficher des pages même lorsqu'elles présentes des petites erreurs de code, ce qui ne sera pas vrai pour d'autres langages informatiques. Cependant si on veut éviter les mauvaises surprises, nous devons ajouter plus de détails dans notre code pour décrire plus précisément le contenu à afficher.
 
 Voici un second exemple:
 ```html

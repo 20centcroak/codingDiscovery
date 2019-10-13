@@ -1,5 +1,5 @@
 ---
-layout: handson-en
+layout: course-fr
 title: Make it pretty
 number: 3
 ---
