@@ -28,3 +28,6 @@ collections:
     sort_by: number
     output: true
     permalink: /:collection/:name
+
+plugins:
+  - jekyll-octicons

@@ -1,22 +1,22 @@
 ---
 layout: course-fr
-title: Linking pages
+title: Créer des liens
 number: 2
 ---
 
- What is the most interesting feature in HTML is the link to other html pages or to other sections of the same page.
+La fonctionnalité la plus intéressante du langage html, et qui l'a popularisé, est la possibilité d'ajouter des liens vers d'autres sites ou d'autres sections du même site. C'est cela qui crée la *toile* (web en anglais).
 
- For example, if you want the reader to be able to click and go to qwant, just add the link to qwant, called *url* in a `<a>` tag like this:
+ Par exemple, si vous voulez qu'un visiteur de votre site web puisse cliquer pour ouvrir la page *Qwant*, il suffit d'ajouter un lien vers cette page. Ce lien s'appelle *url*. On ajoute ce lien grâce à la balise `<a>` comme ceci :
  ```
- <a href="https://github.com/20centcroak/childrencourses">visit children courses</a>
+ <a href="https://www.qwant.com/">Qwant</a>
  ```
 
-If you would like to direct to another of your pages, indicate a *relative link*:
+Si vous souhaitez diriger votre visiteur vers une autre page du site, vous pouvez utiliser un lien *relatif* (il ne comporte pas le début de l'url *http://www. ...*)
 ```
-<a href="sample1.html">see sample1</a>
+<a href="exemple.html">voir l'exemple</a>
 ```
 
-It is also possible to open this link in another tag, using the *target* keyword in the *<a>* tag:
+Il est également possible d'ouvrir le lien dans un nouvel onglet de navigation pour que le visiteur ne quitte pas votre site définitivement. Il faut alors utiliser le mot clef *target* dans la balise *<a>*:
 ```
- <a href="https://github.com/20centcroak/childrencourses" target="_blank">children courses</a>
+<a href="https://www.qwant.com/" target="_blank">Qwant</a>
 ```

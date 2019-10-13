@@ -1,6 +1,6 @@
 ---
 layout: course-fr
-title: Ma page html
+title: Modèle html
 number: 1.1
 ---
 
@@ -23,12 +23,10 @@ Voici un second exemple:
 C'est un fichier html mieux formé. Il donnera exactement le même résultat et nous voyons d'autres balises :
 - `<!DOCTYPE html>`:  définit la version du langage html utilisé. Ici, nous utilisons la version HTML5
 - dans la balise `<html>`, nous définissons la langue : `lang="en"`. *en* signifie "english", *fr* sera utilisé pour une page en français. Nous définissons également la direction du texte `dir="ltr"`. Si on doit lire de droite à gauche, nous indiquerons "rtl": . *ltr* signifie de gauche à droite (left to right).
-- nous introduisons la paire de balises `<head>`. A l'intérieur, nous pouvons ajouter des informations au sujet de notre page html. Par exemple, on peut ajouter un titre qui sera affiché par le navigateur internet dans l'onglet de navigation comme on le voit sur l'image suivante :
+- nous introduisons la paire de balises `<head>`. A l'intérieur, nous pouvons ajouter des informations au sujet de notre page html. Par exemple, on peut ajouter un titre qui sera affiché par le navigateur internet dans l'onglet de navigation.
 
-![page with title]({{ page.githubRepo}}/assets/images/htmlpart1Title.png)
+- enfin la partie à afficher se trouve à l'intérieur des balises `<body>`.
 
-- endin la partie à afficher se trouve à l'intérieur des balises `<body>`.
-
-Tout cette soupe doit être recommencée pour chaque page que l'on crée... Une méthode plus simple est d'utiliser un modèle tel que [html5 boilerplate](https://html5boilerplate.com). Une autre méthode (ouune méthode complémentaire) consiste à utiliser un IDE, c'est à dire un logiciel dédié à l'écriture de code informatique. Par exemple [Atom](https://atom.io/) ou [Visual Studio Code](https://code.visualstudio.com) font gagner beaucoup de temps lorsqu'on crée un site web.
+{% octicon info fill:"blue" %} Tout cette soupe doit être recommencée pour chaque page que l'on crée... Une méthode plus simple est d'utiliser un modèle tel que [html5 boilerplate](https://html5boilerplate.com). Une autre méthode (ou une méthode complémentaire) consiste à utiliser un [IDE](https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement), c'est à dire un logiciel dédié à l'écriture de code informatique. Par exemple [Atom](https://atom.io/) ou [Visual Studio Code](https://code.visualstudio.com) font gagner beaucoup de temps lorsqu'on crée un site web. Visual Studio Code est aujourd'hui largement utilisé pour les développements logiciel web en entreprise.
 
 Nous verrons d'autres moyens permettant de se concentrer sur le contenu que nous voulons afficher et pas sur la soupe répétitive que nous venons de voir.

@@ -1,25 +1,24 @@
 ---
 layout: course-fr
-title: Styling pages
+title: Ajouter des styles
 number: 3
 ---
 
- Well now we know how to create a webpage and add link, but honestly, the result is ugly.
- First the links we have created previously are all on the same line, even if in the html page we set a carriage return after each link.
- Besides the text is black, links are with the old-fashion underlined blue style and the background is white.
+Bien, maintenant nous savons créer une page web et ajouter des liens. Mais franchement le résultat est très moche.
+Si on regarde le résultat du cours "Créer des liens", on voit que les liens sont tous sur la même ligne même si dans notre code on est passé à la ligne. De plus le texte est noir, les liens sont soulignés et bleus comme dans l'internet des années 1990 et le fond est blanc.
 
- This is time to introduce css: cascade sthyle sheets.
+Il est donc temps de présenter un autre langage informatique, complémentaire du html : les css (cascade sthyle sheets ou feuilles de style en cascade)
 
-Css is a separate file (or set of files) that will define the style to apply to the different elements (tags, class, id) of the page.
-But why using a separate file? For many reasons but if you should only memorize 2 of them, these will be the following:
-- defining styles independently of the page allows the reuse them for all the pages of the website, ensuring consistency in the website design and saving efforts of re-definition.
-- when a website need a design refresh or let the user should the style he wants to apply, you just have to define another set of css files and the wole content will be restyled.
+Css ets un fichier séparé du code html qui va indiquer le style à appliquer aux différents éléments de la page (balises, classes, id).
+Ma&is pourquoi utiliser un fichier séparé. Pour de nombreuses raisons mais si on ne devait en citer que 2, les voici:
+- définir des styles indépendamment de la page permet de réutiliser ces styles pour toutes les autres pages du site web. Cela permet donc d'obtenir une jolie homogénéité sur le design du site, ainsi que de gagner beaucoup de temps.
+- lorqu'un site web nécessite d'être rafraichi avec un look plus moderne ou si on veut que l'utilisateur puisse choisir le thème à appliquer au site, il suffit de définir un nouveau jeu de fichiers css à appliquer et tout le contenu est re-stylé.
 
-However css would be nothing without a few new tags to introduce:
-- `<p>` defines a paragraph
-- `<h1>`,  `<h1>`, ... defines different levels of title.
+Cependant css ne serait rien sans quelques nouvelles balises :
+- `<p>` definit un paragraphe
+- `<h1>`,  `<h2>`, ... definissent differents niveaux de titre.
 
-So now we are able to add style in our previous page:
+Nous pouvons dès lors ajouter des styles à notre page :
 ```
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -38,7 +37,7 @@ So now we are able to add style in our previous page:
 </html>
 ```
 
-and here is the styles.css content:
+et voici le contenu du fichier styles.css :
 ```
 body {
   background-color: DarkTurquoise ;

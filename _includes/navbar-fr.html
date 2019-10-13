@@ -14,9 +14,11 @@
         <div class="navbar-nav">
 
           <div class="dropdown show">
-            <a href="{{ '/index-fr.html' | relative_url}}" class="pl-md-0 p-3 text-light">Accueil</a>
+            <a href="{{ '/index-fr.html' | relative_url}}" class="pl-md-0 p-3 text-light">
+              {% octicon home height:32 fill:"white" class:"right left" aria-label:courses %}
+            </a>
             <a href="#" class="pl-md-0 p-3 text-light role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Cours
+              {% octicon book height:32 fill:"white" class:"right left" aria-label:courses %}
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <ul>
@@ -27,7 +29,9 @@
                 {% endfor %}
               </ul>
             </div>
-            <a href="{{ next | relative_url}}" class="pl-md-0 p-3 text-light">Suivant</a>
+            <a href="{{ next | relative_url}}" class="pl-md-0 p-3 text-light">
+              {% octicon chevron-right height:32 fill:"white" class:"right left" aria-label:next %}
+            </a>
           </div>
         </div>
       </div>
