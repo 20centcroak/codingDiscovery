@@ -6,6 +6,12 @@ title: Accueil
   <div class="container">
     <h1 class="display-2 text-light text-uppercase">Apprendre à coder</h1>
     <p class="lead lead-lg">comprendre l'informatique !</p>
-    <p><a href="{{ site.fr-courses[0].url  | relative_url }}">aller au premier cours</a></p>
+    <ul style="list-style-type: none">
+      {% for course in site.fr-courses %}
+      {% if getNext %}{% assign next = course.url %}{% assign getNext = false %}{% endif %}
+      {% if course.number == page.number %}{% assign getNext = true %}{% continue %}{% endif %}
+      <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
