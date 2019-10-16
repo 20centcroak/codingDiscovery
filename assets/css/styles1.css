@@ -1,18 +1,18 @@
 body {
-  background-color: DarkTurquoise ;
+  background-color: #ab97c0 ;
   font-family: Georgia, serif;
 }
 h1{
-  color: Blue;
+  color: #fcf9ff;
 }
 p {
-  color: Teal;
+  color: #ebe0f7;
   padding-left: 20px;
 }
 a{
-  color: MidnightBlue;
+  color: #362646;
   text-decoration: none;
 }
 a:hover {
-  color: DarkOrange;
+  color: #573f70;
 }

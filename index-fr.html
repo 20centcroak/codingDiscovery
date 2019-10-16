@@ -9,7 +9,6 @@ title: Accueil
     <ul style="list-style-type: none">
       {% for course in site.fr-courses %}
       {% if getNext %}{% assign next = course.url %}{% assign getNext = false %}{% endif %}
-      {% if course.number == page.number %}{% assign getNext = true %}{% continue %}{% endif %}
       <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a></li>
       {% endfor %}
     </ul>
