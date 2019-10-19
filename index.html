@@ -1,12 +1,17 @@
 ---
-layout: home-en
-title: Home
+layout: home-fr
+title: Accueil
 ---
 <div class="jumbotron jumbotron-fullheight jumbo-vertical-center text-light text-center bg-dark mb-0 radius-0">
   <div class="container">
-    <h1 class="display-2 text-light text-uppercase">Learning coding</h1>
-    <p class="lead lead-lg">let's understand the basis !</p>
-    <p><a href="{{ site.en-courses[0].url  | relative_url  }}">jump to first course</a></p>
-    <p><a href="{{ 'index-fr.html' | relative_url }}">en français svp !</a></p>
+    <h1 class="display-2 text-light text-uppercase">Apprendre à coder</h1>
+    <p class="lead lead-lg">comprendre l'informatique !</p>
+    <ul style="list-style-type: none">
+      {% for course in site.fr-courses %}
+      {% if getNext %}{% assign next = course.url %}{% assign getNext = false %}{% endif %}
+      <li><a href="{{ course.url | relative_url }}">{{ course.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ 'index-en.html' | relative_url }}">in English please!</a></p>
   </div>
 </div>
