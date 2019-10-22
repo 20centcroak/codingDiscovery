@@ -1,10 +1,10 @@
 ---
 layout: course-fr
-title: Build your first html page
+title: Crée ta première page web
 number: 1.1
 ---
 
-- create in notepad a html file with the following content:
+- Crée un fichier html dans notepad avec le contenu suivant :
 
 ```html
 <!DOCTYPE html>
@@ -18,5 +18,6 @@ number: 1.1
   </body>
 </html>
 ```
-- open it in a web browser and look at the title of tab and what it displayed in the browser.
-- change the title or the text in the body tag, save it and refresh the browser thanks to the *F5* key, observe that your modifications are correctly displayed.
+- ouvre ce fichier dans un navigateur internet et regarde le titre de l'onglet et ce qu'affiche le navigateur.
+- change le titre ou le texte, enregistre le fichier et rafraichis la page dans le navigateur à l'aide de la touche *F5*
+- vérifier que tes modifications s'affichent bien.

@@ -1,30 +1,28 @@
 ---
 layout: course-fr
-title: Make it pretty
+title: Donne du style
 number: 3
 ---
 
-1. add in your previous html page the following line between `<head>` tags
+1. Ajoute dans la page web de la section précédente la ligne suivante entre les balises `<head>`
 ```
     <link rel="stylesheet" href="css/styles.css">
 ```
-1. add tags like `<h1>, <h2>, ...` for titles and `<p>` for paragraphs and add text between these tags, for example:
+1. Ajoute des balises `<h1>, <h2>, ...` pour les titres et `<p>` pour les paragraphes et ajoute du texte entre ces balises, par exemple :
 ```
 <h1>This is my title</h1>
 ```
 
-1. Create a a file named *styles.css* and save it in a folder called *css* located at the same place than your html file
+1. Crée un fichier nommé *styles.css* et enregistre le dans un dossier nommé *css* situé dans le même répertoire que le fichier html
 
-1. define styles for the tags you added. You can use properties like `background-color` or `color` with a color name (you can pick one in the list given [here](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)).
+1. Définis des styles pour les balises utilisées. Tu peux utiliser des propriétés telles que `background-color` ou `color` avec un nom de couleur (t peux en choisir une parmi cette [liste](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)).
 
-1. open the file in your browser and see if the result is as expected.
+1. ouvre le fichier dasn ton navigateur et regarde si le résultat est celui attendu.
 
-1. create another *styles2.css* in the *css* folder
-1. define different styles in this file.
-1. let your html file point on this new file by changing this line:
+1. crée una autre fichier *styles2.css* dans le dossier *css*
+1. définis des styles différents dans ce fichier
+1. fais réfrérence à ce fichier dans le fichier html en modifiant cette ligne:
 ```
     <link rel="stylesheet" href="css/styles2.css">
 ```
-1. refresh your browser (F5) and see that your page looks different thanks to this only change to the css file reference.
-
-see [sample4](../htmlpart1/sample4.html) and [styles](../htmlpart1/css/styles.css) for help.
+1. rafraichis ta page web dans ton navigateur (F5) et oberserve que l'affichage est différent en n'ayant modifié que le fichier css.

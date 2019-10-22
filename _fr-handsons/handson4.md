@@ -1,8 +1,8 @@
 ---
 layout: course-fr
-title: Add fun with animations
+title: Amuse-toi avec des animations
 number: 4
 ---
 
-1. Define a blue square box and draw the first letter of your first name with animation.
-1. the animation should end in 7s and the box should turn yellow all animation long
+1. Définis un carré bleu et écris la première lettre de ton prénom en faisant bouger ce carré
+1. L'anmiation doit durer 7s et le carré doit passer du bleu au jaune pendant l'anmiation.
